@@ -37,7 +37,7 @@ body {
 }
 .title-sec {
   text-align: center;
-  font-size: 40px;
+  @include adaptiveValue("font-size", 40, 24);
   font-style: normal;
   font-weight: 900;
   line-height: 1.3;

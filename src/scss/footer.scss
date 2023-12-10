@@ -1,3 +1,69 @@
-//====================================================================================================
-
-//====================================================================================================
+// ==== FOOTER ==============================
+.footer {
+  // .footer__container
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include adaptiveValue("padding-bottom", 35, 40);
+  }
+  // .footer__bg
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    @include adaptiveValue("width", 750, 225);
+    transform: translate(-44%, 46%);
+    @media (min-width:$mobile){
+    }
+    @media (max-width:$mobile){
+      transform: translate(-44%, 36%);
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  // .footer__social
+  &__social {
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("gap", 14, 20);
+    position: relative;
+  }
+  // .footer__bg-2
+  &__bg-2 {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -34%);
+    img {
+      max-width: 100%;
+    }
+  }
+  // .footer__link
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $pink;
+    border-radius: 50%;
+    border: toRem(1) solid transparent;
+    @include adaptiveValue("width", 93, 60);
+    @include adaptiveValue("height", 93, 60);
+    @include adaptiveValue("padding-top", 27, 17);
+    @include adaptiveValue("padding-bottom", 27, 17);
+    transition: background-color .3s ease, border .3s ease;
+    @media (any-hover: hover){
+      &:hover{
+        background-color: $green;
+        border-color: #fff;
+      }
+    }
+    img {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+}
