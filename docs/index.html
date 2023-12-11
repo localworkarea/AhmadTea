@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231211102903">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231211122928">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,17 +20,17 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo">
+				<a href="index.html" class="header__logo">
 					<img src="img/icons/logo.svg" alt="logo">
 				</a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Пройти тест</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Розіграш</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Чайна церемонія</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Таємниці від Ahmad</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Придбати</a></li>
+							<li class="menu__item"><a href="test.html" class="menu__link">Пройти тест</a></li>
+							<li class="menu__item"><a href="#" data-goto-top="100" data-goto=".box" class="menu__link">Розіграш</a></li>
+							<li class="menu__item"><a href="#" data-goto-top="100" data-goto=".about" class="menu__link">Чайна церемонія</a></li>
+							<li class="menu__item"><a href="#" data-goto-top="100" data-goto=".making" class="menu__link">Таємниці від Ahmad</a></li>
+							<li class="menu__item"><a href="#" data-popup="#popupBuy" class="menu__link">Придбати</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -69,7 +69,7 @@
 							 Який ти насправді?
 						</p>
 						<div class="hero__button button btn-width">
-							<a href="#" class="button__btn button__btn_txt bg-pink">
+							<a href="test.html" class="button__btn button__btn_txt bg-pink">
 								Пройти тест
 							</a>
 						</div>
@@ -121,7 +121,7 @@
 						</div>
 					</div>
 					<div class="box__button button btn-width">
-						<a href="#" class="button__btn button__btn_txt bg-pink">
+						<a href="#" data-goto=".test" class="button__btn button__btn_txt bg-pink">
 							виграти бокс
 						</a>
 					</div>
@@ -171,7 +171,7 @@
 							<li class="about__li">
 								<p class="about__num txt-acc-2">4</p>
 								<p class="about__txt txt-acc-2">
-									Через кілька секунд воду слід<br> злити. Потім можна заливати<br> чайник свіжим окропом. 
+									Через кілька секунд воду слід<br> злити. Потім можна заливати<br> чайник свіжим окропом.
 								</p>
 							</li>
 						</ul>
@@ -228,7 +228,7 @@
 								Проходь цей тест за чаюванням,  дізнавайся свою «приховану чайну особистість» та вигравай бокс для надзвичайного чайного натхнення від Ahmad.
 							</p>
 							<div class="test__button button btn-width">
-								<a href="#" class="button__btn button__btn_txt bg-pink">
+								<a href="test.html" class="button__btn button__btn_txt bg-pink">
 									Пройти тест
 								</a>
 							</div>
@@ -326,7 +326,47 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231211102903"></script>
+	<div id="popupBuy" aria-hidden="true" class="popup store-popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__store store-popup__store">
+					<button data-close type="button" class="store-popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<line x1="22.0207" y1="1.02075" x2="1.0208" y2="22.0207" stroke="#153A2D" stroke-width="2.88711" />
+							<line x1="22.8662" y1="22.0207" x2="1.86628" y2="1.0208" stroke="#153A2D" stroke-width="2.88711" />
+						</svg>
+					</button>
+					<div class="store-popup__list">
+						<div class="store-popup__item">
+							<div class="store-popup__img">
+								<picture><source srcset="img/popup/silpo.webp" type="image/webp"><img src="img/popup/silpo.png" alt="silpo"></picture>
+							</div>
+							<a href="#" class="store-popup__link button__btn bg-pink">Придбати</a>
+						</div>
+						<div class="store-popup__item">
+							<div class="store-popup__img">
+								<picture><source srcset="img/popup/atb.webp" type="image/webp"><img src="img/popup/atb.png" alt="atb"></picture>
+							</div>
+							<a href="#" class="store-popup__link button__btn bg-pink">Придбати</a>
+						</div>
+						<div class="store-popup__item">
+							<div class="store-popup__img">
+								<picture><source srcset="img/popup/fora.webp" type="image/webp"><img src="img/popup/fora.png" alt="fora"></picture>
+							</div>
+							<a href="#" class="store-popup__link button__btn bg-pink">Придбати</a>
+						</div>
+					</div>
+					<div class="store-popup__bg store-popup__bg_01">
+						<picture><source srcset="img/popup/popup-bg.webp" type="image/webp"><img src="img/popup/popup-bg.png" alt="background"></picture>
+					</div>
+					<div class="store-popup__bg store-popup__bg_02">
+						<picture><source srcset="img/popup/popup-bg-2.webp" type="image/webp"><img src="img/popup/popup-bg-2.png" alt="background"></picture>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20231211122928"></script>
 </body>
 
 </html>
