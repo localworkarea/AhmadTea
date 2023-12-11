@@ -10,14 +10,14 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231211122928">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231211223827">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="wrapper test-page">
+	<div class="wrapper page-test">
 		<header class="header">
 			<div class="header__container">
 				<a href="index.html" class="header__logo">
@@ -27,9 +27,9 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item"><a href="test.html" class="menu__link">Пройти тест</a></li>
-							<li class="menu__item"><a href="https://localworkarea.github.io/AhmadTea/index.html#box" class="menu__link">Розіграш</a></li>
-							<li class="menu__item"><a href="https://localworkarea.github.io/AhmadTea/index.html#about" class="menu__link">Чайна церемонія</a></li>
-							<li class="menu__item"><a href="https://localworkarea.github.io/AhmadTea/index.html#making"  class="menu__link">Таємниці від Ahmad</a></li>
+							<li class="menu__item"><a href="#" data-goto-top="100" data-goto="https://localworkarea.github.io/AhmadTea/#box" class="menu__link">Розіграш</a></li>
+							<li class="menu__item"><a href="#" data-goto-top="100" data-goto="https://localworkarea.github.io/AhmadTea/#about" class="menu__link">Чайна церемонія</a></li>
+							<li class="menu__item"><a href="#" data-goto-top="100" data-goto="https://localworkarea.github.io/AhmadTea/#making" class="menu__link">Таємниці від Ahmad</a></li>
 							<li class="menu__item"><a href="#" data-popup="#popupBuy" class="menu__link">Придбати</a></li>
 						</ul>
 					</nav>
@@ -40,32 +40,832 @@
 		<main class="page">
 			<section class="test-page">
 				<div class="test-page__container">
-					<form class="test-page__form" action="">
-						<div class="test-page__block">
-							<div class="test-page__count">
-								<p class="test-page__count-txt txt-acc"><span>1</span>/10</p>
-								<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
-									<g filter="url(#filter0_f_18_1335)">
-										<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
-									</g>
-									<defs>
-										<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-											<feFlood flood-opacity="0" result="BackgroundImageFix" />
-											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-											<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
-										</filter>
-									</defs>
-								</svg>
-							</div>
-							<div class="test-page__body">
+					<form data-ajax data-popup-message="#popupMessage" class="test-page__form" action="">
+						<div class="test-page__blocks show-block">
+							<picture><source srcset="img/test/bg-test-01.webp" type="image/webp"><img class="test-page__bg-01" src="img/test/bg-test-01.png" alt="background"></picture>
+							<picture><source srcset="img/test/bg-test-02.webp" type="image/webp"><img class="test-page__bg-02" src="img/test/bg-test-02.png" alt="background"></picture>
+							<div class="test-page__block test-page__block_01 active">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">1/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
 								<h2 class="test-page__title">
 									Уяви: тебе запрошують на вечірку, де буде багато людей. Твої дії:
 								</h2>
-								<ul class="test-page__list">
-									<li class="test-page__item">
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="firstTestA" type="radio" value="value-a" name="first" class="options__input">
+										<label for="firstTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												оберу провести час із котиком та чашкою чаю Ahmad;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="firstTestB" type="radio" value="value-b" name="first" class="options__input">
+										<label for="firstTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												одразу так! А потім ще запрошу  усіх до себе на чай зі смаколиками;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="firstTestC" type="radio" value="value-c" name="first" class="options__input">
+										<label for="firstTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												буду доооовго думати, але потім усе ж «відірву» себе від дивану;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="firstTestD" type="radio" value="value-d" name="first" class="options__input">
+										<label for="firstTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												трішки подумаю та й погоджусь;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="firstTestE" type="radio" value="value-e" name="first" class="options__input">
+										<label for="firstTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												буду думати про це весь тиждень та вигадувати причину, щоб відмовитись.
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_02">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">2/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									Прийшла нова книжка улюбленого автора чи вийшла довгоочікувана серія серіалу, яку ти так хотів подивитись під улюблений чайочок.  Що робитимеш?
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="secondTestA" type="radio" value="value-a" name="second" class="options__input">
+										<label for="secondTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												уже беру відпустку і вмощуюсь зручно в кріслі з чашкою чаю;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="secondTestB" type="radio" value="value-b" name="second" class="options__input">
+										<label for="secondTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												часу вистачить на все: попрацюю спокійно та й буду дивитися;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="secondTestC" type="radio" value="value-c" name="second" class="options__input">
+										<label for="secondTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												можливо, це може згодитися в роботі — заварю чай та читатиму;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="secondTestD" type="radio" value="value-d" name="second" class="options__input">
+										<label for="secondTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												в одне вухо серіал, в інше — робочий кол;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="secondTestE" type="radio" value="value-e" name="second" class="options__input">
+										<label for="secondTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												на вихідних вимкну всі телефони та влаштую ідеальне чаювання.
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_03">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">3/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									У кіно показують романтичний момент, ти:
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="thirdTestA" type="radio" value="value-a" name="third" class="options__input">
+										<label for="thirdTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												дуже розчулюсь…як завжди;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="thirdTestB" type="radio" value="value-b" name="third" class="options__input">
+										<label for="thirdTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												 дістанеш серветочки та дасиш волю емоціям;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="thirdTestC" type="radio" value="value-c" name="third" class="options__input">
+										<label for="thirdTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												о, класний момент, щоб нарешті обійняти її / його;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="thirdTestD" type="radio" value="value-d" name="third" class="options__input">
+										<label for="thirdTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												піду краще заварю чай;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="thirdTestE" type="radio" value="value-e" name="third" class="options__input">
+										<label for="thirdTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												гарна можливість піти за смаколиками до чаю. 
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_04">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">4/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									Коли обираєш<br> чай, ти:
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="fourthTestA" type="radio" value="value-a" name="fourth" class="options__input">
+										<label for="fourthTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												береш швидко, бо точно знаєш, що любиш;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="fourthTestB" type="radio" value="value-b" name="fourth" class="options__input">
+										<label for="fourthTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												постійно обираєш нові смаки, для експерименту;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="fourthTestC" type="radio" value="value-c" name="fourth" class="options__input">
+										<label for="fourthTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												а що думати?  Завжди беру Ahmad;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="fourthTestD" type="radio" value="value-d" name="fourth" class="options__input">
+										<label for="fourthTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												читаю історію виробництва чаю;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="fourthTestE" type="radio" value="value-e" name="fourth" class="options__input">
+										<label for="fourthTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												 допомагаю обрати чай всім навколо, бо знаю про нього все. 
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_05">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">5/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									 Твій чай + ти +…
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="fifthTestA" type="radio" value="value-a" name="fifth" class="options__input">
+										<label for="fifthTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												книга чи фільм;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="fifthTestB" type="radio" value="value-b" name="fifth" class="options__input">
+										<label for="fifthTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												чашка to go;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="fifthTestC" type="radio" value="value-c" name="fifth" class="options__input">
+										<label for="fifthTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												блокнот і креативні ідеї;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="fifthTestD" type="radio" value="value-d" name="fifth" class="options__input">
+										<label for="fifthTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												ранкові робочі брифінги;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="fifthTestE" type="radio" value="value-e" name="fifth" class="options__input">
+										<label for="fifthTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												вечеря з родиною. 
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_06">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">6/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									Якби тобі треба було порівняти чай із музикою, ти б сказав, що:
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="sixthTestA" type="radio" value="value-a" name="sixth" class="options__input">
+										<label for="sixthTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												чай — це класична музика;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="sixthTestB" type="radio" value="value-b" name="sixth" class="options__input">
+										<label for="sixthTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												чай — це ритмічний хіпхоп;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="sixthTestC" type="radio" value="value-c" name="sixth" class="options__input">
+										<label for="sixthTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												чай — це рок із симфонічним оркестром;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="sixthTestD" type="radio" value="value-d" name="sixth" class="options__input">
+										<label for="sixthTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												чай — це музика, яку я написав сам;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="sixthTestE" type="radio" value="value-e" name="sixth" class="options__input">
+										<label for="sixthTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												чай — це сучасний попсингл.
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_07">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">7/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									У магазині є зимові светри всіх кольорів, який буде твій?
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="seventhTestA" type="radio" value="value-a" name="seventh" class="options__input">
+										<label for="seventhTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												жовтий;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="seventhTestB" type="radio" value="value-b" name="seventh" class="options__input">
+										<label for="seventhTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												блакитний;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="seventhTestC" type="radio" value="value-c" name="seventh" class="options__input">
+										<label for="seventhTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												червоний;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="seventhTestD" type="radio" value="value-d" name="seventh" class="options__input">
+										<label for="seventhTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												зелений;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="seventhTestE" type="radio" value="value-e" name="seventh" class="options__input">
+										<label for="seventhTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												чорний.
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_08">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">8/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									Ти дуже хочеш здійснити мрію, але тобі заважає:
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="eighthTestA" type="radio" value="value-a" name="eighth" class="options__input">
+										<label for="eighthTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												 брак часу, я завжди хочу зробити більше, ніж можу;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="eighthTestB" type="radio" value="value-b" name="eighth" class="options__input">
+										<label for="eighthTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												страх невдачі та неуспіху;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="eighthTestC" type="radio" value="value-c" name="eighth" class="options__input">
+										<label for="eighthTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												недостатність ресурсів або підтримки;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="eighthTestD" type="radio" value="value-d" name="eighth" class="options__input">
+										<label for="eighthTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												мої власні сумніви та перфекціонізм;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="eighthTestE" type="radio" value="value-e" name="eighth" class="options__input">
+										<label for="eighthTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												треба ще багато вчитися та більше працювати.
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_09">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">9/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									Якщо б погодою був/ла ти, сьогодні вона була б:
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="ninthTestA" type="radio" value="value-a" name="ninth" class="options__input">
+										<label for="ninthTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												 вітряна: часом тихо, часом бурхливо;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="ninthTestB" type="radio" value="value-b" name="ninth" class="options__input">
+										<label for="ninthTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												з блискавками і громом;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="ninthTestC" type="radio" value="value-c" name="ninth" class="options__input">
+										<label for="ninthTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												яскравою і сонячною;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="ninthTestD" type="radio" value="value-d" name="ninth" class="options__input">
+										<label for="ninthTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												похмурою: змінювалась б постійно;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="ninthTestE" type="radio" value="value-e" name="ninth" class="options__input">
+										<label for="ninthTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												сніжною і святковою.
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+							<div class="test-page__block test-page__block_10">
+								<div class="test-page__count">
+									<p class="test-page__count-txt txt-acc">10/10</p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="161" height="156" viewBox="0 0 161 156" fill="none">
+										<g filter="url(#filter0_f_18_1335)">
+											<ellipse cx="80.5" cy="78" rx="46.5" ry="44" fill="#E9407A" />
+										</g>
+										<defs>
+											<filter id="filter0_f_18_1335" x="0.5" y="0.5" width="160" height="155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+												<feGaussianBlur stdDeviation="16.75" result="effect1_foregroundBlur_18_1335" />
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<h2 class="test-page__title">
+									 Який смак чаю Ahmad
+									обереш: 
+								</h2>
+								<div class="test-page__options options">
+									<div class="options__item">
+										<input id="tenthTestA" type="radio" value="value-a" name="tenth" class="options__input">
+										<label for="tenthTestA" class="options__label">
+											<span class="options__label-letter txt-acc">a</span>
+											<span class="options__label-txt">
+												чай Ahmad Tea  чорний з квітами лаванди та ароматом бергамоту; 
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="tenthTestB" type="radio" value="value-b" name="tenth" class="options__input">
+										<label for="tenthTestB" class="options__label">
+											<span class="options__label-letter txt-acc">б</span>
+											<span class="options__label-txt">
+												чай Ahmad Tea травʼяний з лимоном та імбиром; 
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="tenthTestC" type="radio" value="value-c" name="tenth" class="options__input">
+										<label for="tenthTestC" class="options__label">
+											<span class="options__label-letter txt-acc">в</span>
+											<span class="options__label-txt">
+												чай Ahmad Tea  китайский зелений;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="tenthTestD" type="radio" value="value-d" name="tenth" class="options__input">
+										<label for="tenthTestD" class="options__label">
+											<span class="options__label-letter txt-acc">г</span>
+											<span class="options__label-txt">
+												чай Ahmad Tea англійський з ароматом бергамоту;
+											</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="tenthTestE" type="radio" value="value-e" name="tenth" class="options__input">
+										<label for="tenthTestE" class="options__label">
+											<span class="options__label-letter txt-acc">д</span>
+											<span class="options__label-txt">
+												чай Ahmad Tea англійський класичний.
+											</span>
+										</label>
+									</div>
+								</div>
+								<button type="button" class="test-page__button button__btn bg-pink">
+									ДАЛІ
+								</button>
+							</div>
+						</div>
+						<div class="test-page__results result-test">
+							<h2 class="result-test__title txt-acc">
+								твій результат
+								<picture><source srcset="img/test/bg-result-1.webp" type="image/webp"><img class="result-test__img-title" src="img/test/bg-result-1.png" alt="background"></picture>
+							</h2>
+							<div class="result-test__body">
+								<div class="result-test__main result-test__main_03">
+									<picture><source srcset="img/test/bg-circle-1.webp" type="image/webp"><img class="result-test__circle-bg result-test__circle-bg_01" src="img/test/bg-circle-1.png" alt="background"></picture>
+									<picture><source srcset="img/test/bg-circle-2.webp" type="image/webp"><img class="result-test__circle-bg result-test__circle-bg_02" src="img/test/bg-circle-2.png" alt="background"></picture>
+									<picture><source srcset="img/test/bg-circle-3.webp" type="image/webp"><img class="result-test__circle-bg result-test__circle-bg_03" src="img/test/bg-circle-3.png" alt="background"></picture>
+									<picture><source srcset="img/test/bg-circle-4.webp" type="image/webp"><img class="result-test__circle-bg result-test__circle-bg_04" src="img/test/bg-circle-4.png" alt="background"></picture>
+									<picture><source srcset="img/test/bg-circle-5.webp" type="image/webp"><img class="result-test__circle-bg result-test__circle-bg_05" src="img/test/bg-circle-5.png" alt="background"></picture>
+									<picture><source srcset="img/test/bg-result-2.webp" type="image/webp"><img class="result-test__bg-img-02" src="img/test/bg-result-2.png" alt="background"></picture>
+									<h2 class="result-test__sub-title">
+										<span class="result-test__title-sub result-test__title-sub_01">
+											Лимонно-імбирний мрійник
+										</span>
+										<span class="result-test__title-sub result-test__title-sub_02">
+											Зелений мудрець-митець
+										</span>
+										<span class="result-test__title-sub result-test__title-sub_03">
+											Лавандовий<br>
+											легіт
+										</span>
+										<span class="result-test__title-sub result-test__title-sub_04">
+											Елегантний
+											чайний пан
+										</span>
+										<span class="result-test__title-sub result-test__title-sub_05">
+											Надзвичайний чайний супергерой
+										</span>
+									</h2>
+									<div class="result-test__block">
+										<div class="result-test__head">
+											<p class="result-test__txt-head">
+												<span class="result-test__head-txt result-test__head-txt_01">
+													Твій ідеальний cмак — чай Ahmad tea з лимоном та імбиром.
+												</span>
+												<span class="result-test__head-txt result-test__head-txt_02">
+													Твій ідеальний cмак — чай
+													Ahmad tea китайський зелений
+												</span>
+												<span class="result-test__head-txt result-test__head-txt_03">
+													Твій ідеальний cмак — чай Ahmad tea з квітами лаванди та ароматом бергамоту
+												</span>
+												<span class="result-test__head-txt result-test__head-txt_04">
+													Твій ідеальний cмак — чай Ahmad tea Англійський №1 з ароматом бергамоту
+												</span>
+												<span class="result-test__head-txt result-test__head-txt_05">
+													Твій ідеальний cмак — чай Ahmad tea Англійський до сніданку
+												</span>
+											</p>
+											<div class="result-test__image">
+												<picture><source srcset="img/test/tea-1.webp" type="image/webp"><img class="result-test__img-tea result-test__img-tea_01" src="img/test/tea-1.png" alt="pack of tea"></picture>
+												<picture><source srcset="img/test/tea-2.webp" type="image/webp"><img class="result-test__img-tea result-test__img-tea_02" src="img/test/tea-2.png" alt="pack of tea"></picture>
+												<picture><source srcset="img/test/tea-3.webp" type="image/webp"><img class="result-test__img-tea result-test__img-tea_03" src="img/test/tea-3.png" alt="pack of tea"></picture>
+												<picture><source srcset="img/test/tea-4.webp" type="image/webp"><img class="result-test__img-tea result-test__img-tea_04" src="img/test/tea-4.png" alt="pack of tea"></picture>
+												<picture><source srcset="img/test/tea-5.webp" type="image/webp"><img class="result-test__img-tea result-test__img-tea_05" src="img/test/tea-5.png" alt="pack of tea"></picture>
+											</div>
+										</div>
+										<div class="result-test__more">
+											<div data-da=".result-test__image,768" class="result-test__img-men">
+												<picture><source srcset="img/men-1.webp" type="image/webp"><img class="result-test__men-img result-test__men-img_01" src="img/men-1.png" alt="men"></picture>
+												<picture><source srcset="img/men-2.webp" type="image/webp"><img class="result-test__men-img result-test__men-img_02" src="img/men-2.png" alt="men"></picture>
+												<picture><source srcset="img/men-3.webp" type="image/webp"><img class="result-test__men-img result-test__men-img_03" src="img/men-3.png" alt="men"></picture>
+												<picture><source srcset="img/men-4.webp" type="image/webp"><img class="result-test__men-img result-test__men-img_04" src="img/men-4.png" alt="men"></picture>
+												<picture><source srcset="img/men-5.webp" type="image/webp"><img class="result-test__men-img result-test__men-img_05" src="img/men-5.png" alt="men"></picture>
+											</div>
+											<p class="result-test__more-txt">
+												<span class="result-test__txt-more result-test__txt-more_01">У душі ти — лимонно-імбирний мрійник. Це загадкова істота, що має магічну здатність вигадувати великі мрії під час чаювання, а потім втілювати їх в життя. Лимонно-імбирний мрійник – романтичний та чутливий з величезним запасом творчості та натхнення, він особливий, не схожий на інших. Він вміє надихнути інших та подарувати їм енергію та сили для великих мрій.</span>
+												<span class="result-test__txt-more result-test__txt-more_02">
+													У душі ти — Зелений мудрець-митець. Ця чайна істота сповнена мудрості та розуму, але це не заважає їй постійно вигадувати дивовижні ідеї, свіжо та нетипово дивитись на цей світ. Зелений мудрець-митець не схожий на інших, він завжди намагається підкреслити свою унікальність у всьому: в одязі, спілкуванні на виборі чаю.
+												</span>
+												<span class="result-test__txt-more result-test__txt-more_03">
+													У душі ти — лавандовий легіт. Ця чайна істота легка та неповторна, вона зʼявляється наче вітерець з ароматом бергамоту та наповнює все навколо себе гармонією та спокоєм. Поряд з лавандовим легітом всі почуваються спокійно та радісно,  набувають сміливість та натхнення. Ця істота – про постійний пошук балансу та щастя. 
+												</span>
+												<span class="result-test__txt-more result-test__txt-more_04">
+													У душі ти — елегантний чайний пан. Ця чайна істота справді дивовижна, бо досконало вміє стримувати свої емоції та контролювати себе, хоча всередині рясніє купою яскравих почуттів та думок. Елегантний чайний пан вміє ідеально спілкуватись з людьми та може підтримати будь-яку бесіду, зробити зустріч вишуканою та сповненою сенсів. 
+												</span>
+												<span class="result-test__txt-more result-test__txt-more_05">
+													У душі ти —  надзвичайний чайний супергерой. Це сильна та безкомпромісна істота, девіз якої «Все або нічого». Надзвичайний чайний супергерой вміє підбадьорити та надихнути всіх навколо, він володіє великою внутрішньою силою, яку ніхто не здатен перемогти та підкорити. Він сильний та неповторний, на нього завжди чекають великі звершення та відкриття.
+												</span>
+											</p>
+										</div>
+									</div>
+									<div class="result-test__footer">
+										<p class="result-test__txt-footer">
+											<span class="result-test__footer-txt result-test__footer-txt_01">Опис чаю: Освіжаючий смак лимону відмінно гармонує зі смаком натурального імбиру в цьому збалансованому тонізуючому трав'яному напої. Піднімає настрій, не залишаючи шансів втомі. Добре підходить для приготування смачних натуральних коктейлів. Смакує гарячим та охолодженим.</span>
+											<span class="result-test__footer-txt result-test__footer-txt_02">
+												Опис чаю: Чай Ahmad tea китайський зелений.<br> Освіжаючий чай з характерними нотками смаку китайського зеленого чаю і ніжним свіжим ароматом. Завдяки особливостям технології виробництва зелений чай максимально зберігає наявність антиоксидантів, вітамінів і мікроелементів. Ідеальний вибір для щоденного чаювання. Добре поєднується з медом, лимоном і запашними травами.
+											</span>
+											<span class="result-test__footer-txt result-test__footer-txt_03">
+												Елегантний купаж високоякісних чорних чаїв та квітів лаванди з ароматом бергамоту. Ідеально збалансований, у міру міцний бленд. Легкий свіжий цитрусовий аромат бергамоту гармонійно доповнює заспокійливі квіткові ноти лаванди.
+											</span>
+											<span class="result-test__footer-txt result-test__footer-txt_04">
+												Чай Ahmad tea Англійський №1. Купаж ексклюзивних сортів чорного чаю з легким ароматом бергамоту в досконалому виконанні Ahmad Tea, ідеальний для чаювання у будь-який час дня. У ньому відмінно збалансовані м’який смак, аромат, колір та міцність. Чашка цього чаю робить спілкування теплим та приємним.
+											</span>
+											<span class="result-test__footer-txt result-test__footer-txt_05">
+												Два континенти і три країни поєдналися у цьому чаї. Золоті іскри ассамського, глибокий насичений смак кенійського та міцність цейлонського чаю створили в ньому гармонійну єдність та досконалий баланс. Його свіжий та пряний аромат нагадує пахощі літнього саду. Окраса чаювання у будь-який час, він традиційно вважається чаєм для сніданку, який бадьорить, освіжає та чудово поєднується з молоком.
+											</span>
+										</p>
+									</div>
+								</div>
 
-									</li>
-								</ul>
+								<div class="result-test__form form-result">
+									<div class="form-result__body">
+										<picture><source srcset="img/test/pack-tea.webp" type="image/webp"><img class="form-result__img-bg-2" src="img/test/pack-tea.png" alt="background"></picture>
+										<picture><source srcset="img/test/bg-result-3.webp" type="image/webp"><img class="form-result__img-bg-1" src="img/test/bg-result-3.png" alt="background"></picture>
+										<h3 class="form-result__title">
+											Вигравай надзвичайний чайний бокс від Ahmad!
+										</h3>
+										<p class="form-result__txt">
+											Залишився останній крок: вкажіть свій номер телефону для участі в розіграші
+										</p>
+										<input type="tel" name="tel" data-inputmask="'mask': '+38 (099) 999 99 99'" placeholder="+38 (0__) ___ __ __" data-error="заповніть поле" data-required class="form-result__input input">
+										<button type="submit" class="form-result__submit button__btn bg-pink">
+											взяти участь в розіграші
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</form>
@@ -113,7 +913,23 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231211122928"></script>
+
+
+
+	<div id="popupMessage" aria-hidden="true" class="popup msg-popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__msg msg-popup__msg">
+					<div class="msg-popup__title form-result__title">чудово!</div>
+					<p class="msg-popup__txt form-result__txt">
+						А тепер слідкуй за результатами конкурсу на сайті або у соцмережах Ahmad
+					</p>
+					<button data-close type="button" class="msg-popup__close button__btn bg-pink">ок</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20231211223827"></script>
 </body>
 
 </html>

@@ -1,20 +1,55 @@
-//<FORM>
-// Сніппет (HTML):
-.form {
-	&__row {
+//<INPUT>
+// Сніппет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.input {
+	border-radius: toRem(20);
+	background: #F1F1F1;
+	width: 100%;
+	display: block;
+	padding: toRem(20);
+	outline: none;
+
+	@include adaptiveValue("font-size", 18, 16);
+	color: #000;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	&._form-focus {
 	}
-	&__column {
-	}
-	&__line {
-	}
-	&__input {
-	}
-	&__button {
-	}
-	&__error {
+	&._form-error {
 	}
 }
-//</FORM>
+.input[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		color: rgba(0, 0, 0, 0.3);
+		transition: opacity 0.3s;
+	}
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+textarea.input {
+	resize: none;
+	padding: 0px 0px;
+}
+
+.form__error {
+	color: $pink;
+	font-weight: 600;
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
 // <BUTTONS>
 // Сніппет (HTML): btn
