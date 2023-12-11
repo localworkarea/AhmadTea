@@ -510,7 +510,12 @@
        transform: translate(-55%, -55%);
     }
     img {
-      width: 200%;
+      @media (min-width:$mobileSmall){
+        width: 200%;
+      }
+      @media (max-width:$mobileSmall){
+         width: 100%; 
+      }
     }
   }
   // .about__img
@@ -885,10 +890,10 @@
       transform: translate(-50%, -50%);
     }
     img {
-      @media (min-width:$mobileSmall){
+      @media (min-width:$mobile){
         width: 200%;
       }
-      @media (max-width:$mobileSmall){
+      @media (max-width:$mobile){
          width: 100%; 
       }
     }
@@ -945,9 +950,15 @@
       height: 100%;
     }
     img {
-      max-width: 200%;
       @media (max-width:$tablet){
         height: 110%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @media (min-width:em(550.98)){
+        max-width: 200%;
       }
       @media (max-width: em(550.98)){
           max-width: 300%;

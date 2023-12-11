@@ -27,10 +27,10 @@
       transform: translate(-44%, 16%);
     }
     img {
-      @media (min-width:$mobileSmall){
+      @media (min-width:$mobile){
         width: 200%;
       }
-      @media (max-width:$mobileSmall){
+      @media (max-width:$mobile){
         width: 100%;          
       }
     }

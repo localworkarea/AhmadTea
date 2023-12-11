@@ -643,10 +643,6 @@ body {
   width: 100%;
 }
 
-.about__bg img {
-  width: 200%;
-}
-
 .about__img {
   position: relative;
 }
@@ -804,10 +800,6 @@ body {
   display: none;
 }
 
-.making__bg-04 img {
-  max-width: 200%;
-}
-
 .making__logo {
   padding-left: 0.625rem;
   margin-bottom: 2.5rem;
@@ -937,10 +929,6 @@ body {
 }
 
 @media (min-width: 30.06125em) {
-  .footer__bg img {
-    width: 200%;
-  }
-
   .hero__decor-2 {
     position: absolute;
     bottom: 0;
@@ -964,7 +952,7 @@ body {
     max-width: 130%;
   }
 
-  .making__bg img {
+  .about__bg img {
     width: 200%;
   }
 
@@ -978,6 +966,10 @@ body {
 @media (min-width: 34.43625em) {
   .box__lable-one {
     margin-right: 25px;
+  }
+
+  .making__bg-04 img {
+    max-width: 200%;
   }
 
   .making__txt-main {
@@ -1038,6 +1030,10 @@ body {
     background-color: #fff;
     -webkit-transition: width 0.3s ease;
     transition: width 0.3s ease;
+  }
+
+  .footer__bg img {
+    width: 200%;
   }
 
   .hero__container {
@@ -1106,6 +1102,10 @@ body {
 
   .slider-test {
     display: none;
+  }
+
+  .making__bg img {
+    width: 200%;
   }
 }
 
@@ -1789,6 +1789,12 @@ body {
 
   .making__bg-04 img {
     height: 110%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
   .making__item {
@@ -1990,6 +1996,10 @@ body {
             transform: translate(-44%, 36%);
   }
 
+  .footer__bg img {
+    width: 100%;
+  }
+
   .hero__container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2121,6 +2131,10 @@ body {
   .slider-test__btn-swiper.swiper-button-next {
     right: 0;
   }
+
+  .making__bg img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 48.06125em) and (any-hover: none) {
@@ -2216,10 +2230,6 @@ body {
             transform: translate(-44%, 16%);
   }
 
-  .footer__bg img {
-    width: 100%;
-  }
-
   .hero__decor-2 .hero__prl {
     width: 100%;
   }
@@ -2232,7 +2242,7 @@ body {
     max-width: 150%;
   }
 
-  .making__bg img {
+  .about__bg img {
     width: 100%;
   }
 
