@@ -95,7 +95,7 @@ import './libs/popup.js';
 Модуль паралаксу мишею
 Документація: https://template.fls.guru/template-docs/modul-animacii-parallaks-obektov-pri-dvizhenii-myshi.html
 */
-import './libs/parallax-mouse.js'
+import './libs/parallax-mouse.js';
 
 // ========================================================================================================================================================================================================================================================
 // Робота з формами ========================================================================================================================================================================================================================================================
@@ -183,7 +183,7 @@ import './files/scroll/lazyload.js';
 // Спостерігач за об'єктами з атрибутом data-watch
 // Документація: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
 // Сніппет(HTML):
-// import './libs/watcher.js'
+import './libs/watcher.js';
 
 // Модуль поекранної прокрутки
 // Документація: https://template.fls.guru/template-docs/modul-poekrannoj-prokrutki-stranicy-fullpage.html
@@ -193,7 +193,7 @@ import './files/scroll/lazyload.js';
 // Модуль паралаксу
 // Документація: https://template.fls.guru/template-docs/paralaks-pri-skroli.html
 // Сніппет(HTML):
-// import './libs/parallax.js'
+import './libs/parallax.js';
 
 // Функції роботи скролом
 import * as flsScroll from "./files/scroll/scroll.js";
