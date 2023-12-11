@@ -13,6 +13,9 @@
     z-index: -1;
     left: 0;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include adaptiveValue("width", 750, 225);
     transform: translate(-44%, 46%);
     @media (min-width:$mobile){
@@ -20,8 +23,16 @@
     @media (max-width:$mobile){
       transform: translate(-44%, 36%);
     }
+    @media (max-width:$mobileSmall){
+      transform: translate(-44%, 16%);
+    }
     img {
-      max-width: 100%;
+      @media (min-width:$mobileSmall){
+        width: 200%;
+      }
+      @media (max-width:$mobileSmall){
+        width: 100%;          
+      }
     }
   }
   // .footer__social

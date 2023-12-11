@@ -22,7 +22,9 @@
     position: absolute;
     left: 0;
     @include adaptiveValue("width", 1890, 1400,2,1920,1440);
-    // @include adaptiveValue("width", 1400,756,3,1439,769);
+    img {
+      width: 100%;
+    }
     @include adaptiveValue("width", 1400,595,3,1439,360);
     @media (min-width:em(1100.98)){
       transform: translateX(calc(-50% + 313px));
@@ -68,8 +70,8 @@
       z-index: -1;
     }
     img {
+      width: 100%;
       @media (min-width:em(1200.98)){
-        max-width: 100%;
       }
     }
     @media (max-width: em(1200.98)){
@@ -78,19 +80,25 @@
 	}
   // .hero__decor-2
   &__decor-2 {
+    .hero__prl {
+      @media (max-width:$mobileSmall){
+        width: 100%;
+      }
+    }
     @media (min-width:$mobileSmall){
       position: absolute;
       bottom: 0;
       right: 0;
       z-index: -1;
-      transform: translate(50%, 50%);
+      transform: translate(9%, 50%);
+      max-width: toRem(600);
     }
     @media (max-width:$mobileSmall){
        display: none; 
     }
     img {
       @media (min-width:$mobileSmall){
-        max-width: 100%;
+        width: 200%;
       }
     }
   }
@@ -343,18 +351,34 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    &::before {
-      content:'';
-      position: absolute;
+    img {
+      width: 150%;
+      position: relative;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
-      border-radius: 607px;
-      background-color: #E9407A;
-      filter: blur(94.5px);
+      @media (min-width:$mobileSmall){
+        max-width: 130%;
+      }
+      @media (max-width:$mobileSmall){
+        max-width: 150%;          
+      }
     }
+    // &::before {
+    //   content:'';
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   width: 100%;
+    //   height: 100%;
+    //   // border-radius: 607px;
+    //   // background-color: #E9407A;
+    //   // filter: blur(94.5px);
+    //   background: url(img/box-bg.png);
+    //   background-repeat: no-repeat;
+    //   background-size: 100% 100%;
+    // }
   }
 
   // .box__button
@@ -469,39 +493,53 @@
   &__bg {
     position: absolute;
     z-index: -1;
+    top: -38%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     @media (min-width:em(1300.98)){
-      top: -38%;
-      left: -50%;
+      transform: translate(-55%, -8%);
     }
     @media (max-width: em(1300.98)){
-      transform: translate(-56%, -65%);
+      transform: translate(-55%, -28%);
     }
     @media (max-width:$mobile){
-       width: 90%; 
-       transform: translate(-56%, -58%);
+      top: 0;
+       transform: translate(-55%, -55%);
     }
     img {
-      max-width: 100%;
+      width: 200%;
     }
   }
   // .about__img
   &__img {
     position: relative;
-    &::before {
-      content:'';
-      position: absolute;
-      top: 0;
-      left: 0;
-      @include adaptiveValue("width", 165, 148);
-      @include adaptiveValue("height", 155, 148);
-      background-color: #FFF;
-      z-index: -1;
-      filter: blur(65px);
-    }
+    // &::before {
+    //   content:'';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   @include adaptiveValue("width", 165, 148);
+    //   @include adaptiveValue("height", 155, 148);
+    //   background-color: #FFF;
+    //   z-index: -1;
+    //   filter: blur(65px);
+    // }
     img {
       max-width: 100%;
     }
   }
+	// .about__img-bg
+	&__img-bg {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    transform: translate(-50%, -50%) scale(2);
+    @include adaptiveValue("width", 165, 148);
+    height: auto
+	}
   // .about__title
   &__title {
     @include adaptiveValue("margin-bottom", 50, 30);
@@ -537,7 +575,7 @@
       transform: translate(-50%, -26%);
     }
     img {
-      max-width: 100%;
+      width: 100%;
     }
   }
   // .about__list
@@ -836,6 +874,9 @@
     z-index: -1;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include adaptiveValue("width", 797, 200);
     @media (min-width:$tablet){
       transform: translate(-57%, -14%);
@@ -844,7 +885,12 @@
       transform: translate(-50%, -50%);
     }
     img {
-      max-width: 100%;
+      @media (min-width:$mobileSmall){
+        width: 200%;
+      }
+      @media (max-width:$mobileSmall){
+         width: 100%; 
+      }
     }
   }
 	// .making__body
@@ -854,27 +900,6 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: toRem(140);
-    // @media (max-width:$tablet){
-    //   &::before {
-    //     content:'';
-    //     position: absolute;
-    //     z-index: -1;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    //     width: toRem(1370);
-    //     background-color: $pink;
-    //     filter: blur(150px);
-    //     @media (min-width:$mobileSmall){
-    //        height: 80%; 
-    //        transform: translate(-50%, -50%);
-    //     }
-    //     @media (max-width:$mobileSmall){
-    //        height: 95%; 
-    //        transform: translate(-50%, -45%);
-    //     }
-    //   }
-    // }
 	}
   // .making__bg-02
   &__bg-02 {
@@ -994,24 +1019,6 @@
         flex-direction: row-reverse;
       }
     }
-    // &:nth-child(1),
-    // &:nth-child(3) {
-    //   @media (max-width:$tablet){
-    //     &::before {
-    //       content:'';
-    //       position: absolute;
-    //       z-index: -1;
-    //       bottom: 0;
-    //       left: 50%;
-    //       transform: translate(-50%, 60%);
-    //       width: 562px;
-    //       height: 519px;
-    //       border-radius: 562px;
-    //       background-color: #ED709E;
-    //       filter: blur(150px);
-    //     }
-    //   }
-    // }
   }
   // .making__mun
   &__mun {
@@ -1121,10 +1128,13 @@
     top: 0;
     right: 0;
     z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include adaptiveValue("width", 800, 260);
     transform: translate(64%, -51%);
     img {
-      max-width: 100%;
+      width: 200%;
     }
   }
 }
