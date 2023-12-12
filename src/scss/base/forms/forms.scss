@@ -49,6 +49,9 @@ textarea.input {
 	top: 5px;
 	left: 50%;
 	transform: translateX(-50%);
+	@media (max-width:$mobileSmall){
+		 top: 0; 
+	}
 }
 
 // <BUTTONS>

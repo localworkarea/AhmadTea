@@ -66,18 +66,15 @@ body {
 }
 .button {
   position: relative;
-  &:before {
-    content:'';
+	// .button__bg
+	&__bg {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @include adaptiveValue("width", 321, 213);
-    @include adaptiveValue("height", 155, 103);
-    border-radius: 321px;
-    background: #FFF;
-    filter: blur(94.5px);
+    height: auto;
+    width: 190%;
   }
   // .button__btn
   &__btn {

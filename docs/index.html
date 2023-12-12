@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231212012904">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231212155007">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,8 +47,8 @@
 					</div>
 					<div class="hero__body">
 						<div class="hero__decor">
-							<div class="hero__prl" data-prlx-mouse data-prlx-dxr data-prlx-a="10">
-								<picture><source srcset="img/decor-1.webp" type="image/webp"><img src="img/decor-1.png" alt="decor"></picture>
+							<div data-prlx-parent class="hero__prl">
+								<picture><source srcset="img/decor-1.webp" type="image/webp"><img data-prlx src="img/decor-1.png" alt="decor"></picture>
 							</div>
 						</div>
 						<div class="hero__decor-2">
@@ -72,6 +72,7 @@
 							<a href="test.html" class="button__btn button__btn_txt bg-pink">
 								Пройти тест
 							</a>
+							<picture><source srcset="img/bg-btn.webp" type="image/webp"><img class="button__bg" src="img/bg-btn.png" alt="background"></picture>
 						</div>
 					</div>
 				</div>
@@ -127,11 +128,11 @@
 					</div>
 				</div>
 			</section>
-			<section data-watch data-watch-once data-watch-threshold="0.3" class="about">
+			<section class="about">
 				<div class="about__container">
-					<div class="about__body">
+					<div data-watch data-watch-once data-watch-threshold="0.4" class="about__body">
 						<div class="about__bg">
-							<picture><source srcset="img/about-2.webp" type="image/webp"><img data-prlx-mouse data-prlx-dxr data-prlx-a="10" src="img/about-2.png" alt="decor"></picture>
+							<picture><source srcset="img/about-2.webp" type="image/webp"><img data-prlx-mouse data-prlx-dxr data-prlx-a="5" src="img/about-2.png" alt="decor"></picture>
 						</div>
 						<div class="about__img">
 							<picture><source data-srcset="img/about-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/about-1.png" alt="caps"></picture>
@@ -145,7 +146,7 @@
 							Ось декілька порад, як перетворити заварювання чаю Ahmad у маленьку чайну церемонію: 
 						</p>
 					</div>
-					<div class="about__content">
+					<div data-watch data-watch-once data-watch-threshold="0.4" class="about__content">
 						<div data-prlx-parent class="about__bg-two">
 							<picture><source srcset="img/about-3.webp" type="image/webp"><img data-prlx src="img/about-3.png" alt="decor"></picture>
 						</div>
@@ -231,6 +232,7 @@
 								<a href="test.html" class="button__btn button__btn_txt bg-pink">
 									Пройти тест
 								</a>
+								<picture><source srcset="img/bg-btn.webp" type="image/webp"><img class="button__bg" src="img/bg-btn.png" alt="background"></picture>
 							</div>
 						</div>
 						<div data-prlx-parent data-da=".slide-test-05,768" class="test__item item-test-05">
@@ -241,17 +243,17 @@
 			</section>
 			<section class="making">
 				<div class="making__container">
-					<div data-prlx-parent class="making__bg">
+					<div data-prlx-parent data-watch data-watch-once class="making__bg">
 						<picture><source srcset="img/making-bg.webp" type="image/webp"><img data-prlx src="img/making-bg.png" alt="background"></picture>
 					</div>
 					<div class="making__body">
-						<div class="making__bg-02">
+						<div data-watch data-watch-once data-watch-threshold="0.2" class="making__bg-02">
 							<picture><source srcset="img/making-bg-2.webp" type="image/webp"><img data-prlx-mouse data-prlx-dxr data-prlx-a="8" src="img/making-bg-2.png" alt="background"></picture>
 						</div>
-						<div class="making__bg-04">
+						<div data-watch data-watch-once data-watch-threshold="0.2" class="making__bg-04">
 							<picture><source srcset="img/making-bg-4.webp" type="image/webp"><img src="img/making-bg-4.png" alt="background"></picture>
 						</div>
-						<div data-watch data-watch-once class="making__sub-body">
+						<div data-watch data-watch-once data-watch-threshold="0.3" class="making__sub-body">
 							<div class="making__logo">
 								<img data-src="img/icons/logo.svg" alt="logo">
 							</div>
@@ -263,28 +265,28 @@
 							</p>
 						</div>
 						<ul class="making__list">
-							<li data-watch data-watch-once class="making__item">
+							<li data-watch data-watch-once data-watch-threshold="0.5" class="making__item">
 								<p class="making__mun title-big">1</p>
 								<p class="making__txt txt-acc-2">
 									Ahmad готує чай з 1986 року і є по-справжньому найбільшою сімейною компанією світу. Головний дегустатор — представники «династії Ahmad» в 4 поколінні. Компанія відзначена нагородою Great Taste — найвищою відзнакою для чайного виробництва.
 								</p>
 								<picture><source data-srcset="img/making-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="making__img img-making-01" data-src="img/making-1.png" alt="element"></picture>
 							</li>
-							<li data-watch data-watch-once class="making__item">
+							<li data-watch data-watch-once data-watch-threshold="0.5" class="making__item">
 								<p class="making__mun title-big">2</p>
 								<p class="making__txt txt-acc-2">
 									Компанія розробила спеціальну програму Inspiring Kindness Programme задля допомоги людям і країнам, де є виробництво нашого чаю, зокрема це освітні та будівельні проєкти для сиріт України.
 								</p>
 								<picture><source data-srcset="img/making-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="making__img img-making-02" data-src="img/making-2.png" alt="element"></picture>
 							</li>
-							<li data-watch data-watch-once class="making__item">
+							<li data-watch data-watch-once data-watch-threshold="0.5" class="making__item">
 								<p class="making__mun title-big">3</p>
 								<p class="making__txt txt-acc-2">
 									Процес виготовлення чаю Ahmad включає більше ніж 7–8 етапів перевірки якості чаю, від його виробництва до готового продукту. Від плантації до пачки, чайне листя проходить через такі процедури, як збір, зав’ялювання, скручування, ферментація, просмажування, сортування.
 								</p>
 								<picture><source data-srcset="img/making-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="making__img img-making-03" data-src="img/making-3.png" alt="element"></picture>
 							</li>
-							<li data-watch data-watch-once class="making__item">
+							<li data-watch data-watch-once data-watch-threshold="0.5" class="making__item">
 								<p class="making__mun title-big">4</p>
 								<p class="making__txt txt-acc-2">
 									Фабрика в ОАЕ, яка належить Ahmad, застосовує передові технології, включаючи роботів, сортувальників та спеціалізовані машини для виготовлення пакетиків чаю. У складних умовах, незважаючи на перешкоди продовжує працювати чайний завод у Харкові.
@@ -292,7 +294,7 @@
 								<picture><source data-srcset="img/making-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="making__img img-making-04" data-src="img/making-4.png" alt="element"></picture>
 								<picture><source data-srcset="img/making-5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="making__img img-making-05" data-src="img/making-5.png" alt="element"></picture>
 							</li>
-							<li data-watch data-watch-once class="making__item">
+							<li data-watch data-watch-once data-watch-threshold="0.5" class="making__item">
 								<p class="making__mun title-big">5</p>
 								<p class="making__txt txt-acc-2">
 									Дегустатори чаю проводять до 10 годин щодня обираючи для вас найкращі купажі. За цей час вони встигають скуштувати щонайменше 400 різних варіантів купажу.
@@ -306,7 +308,7 @@
 						<div data-prlx-parent class="making__bg-03">
 							<picture><source srcset="img/making-bg-3.webp" type="image/webp"><img data-prlx src="img/making-bg-3.png" alt="background"></picture>
 						</div>
-						<div class="making__video-link">
+						<div data-watch data-watch-threshold="0.2" class="making__video-link">
 							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/t2hy49lhb1I?si=bjYeNM0BMS96w0CB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 						</div>
 					</div>
@@ -320,10 +322,10 @@
 				</div>
 				<div class="footer__social">
 					<picture><source srcset="img/footer-bg-2.webp" type="image/webp"><img class="footer__bg-2" src="img/footer-bg-2.png" alt="background"></picture>
-					<a href="#" class="footer__link">
+					<a href="https://www.facebook.com/AhmadTeaUkraine" class="footer__link">
 						<img data-src="img/icons/facebook.svg" alt="facebook">
 					</a>
-					<a href="#" class="footer__link">
+					<a href="https://www.instagram.com/ahmadteaukraine/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" class="footer__link">
 						<img data-src="img/icons/insta.svg" alt="instagram">
 					</a>
 				</div>
@@ -386,7 +388,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231212012904"></script>
+	<script src="js/app.min.js?_v=20231212155007"></script>
 </body>
 
 </html>
