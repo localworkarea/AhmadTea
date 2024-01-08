@@ -63,7 +63,7 @@ body::after {
 		transition: transform 0.6s ease 0s;
 		border-radius: toRem(30);
 		.store-popup & {
-			max-width: toRem(640);
+			max-width: toRem(1200);
 		}
 		.msg-popup & {
 			max-width: toRem(497);
@@ -82,12 +82,16 @@ body::after {
 		position: relative;
 		padding: toRem(40) toRem(44); 
 		display: flex;
+		justify-content: center;
 		min-height: toRem(435);
 		@media (min-width:em(680.98)){
 			align-items: center;
 		}
-		@media (max-width: em(680.98)){
-			  justify-content: center;
+		@media (min-width:$mobileSmall){
+			padding: toRem(40) toRem(44);  
+		}
+		@media (max-width:$mobileSmall){
+			padding: toRem(40) toRem(20);  
 		}
 	}
 	// .store-popup__close
@@ -97,17 +101,27 @@ body::after {
 		top: 25px;
 		right: 25px;
 		outline: none;
+		@media (max-width:$mobileSmall){
+			top: 15px;
+			right: 15px;
+		}
 	}
 	// .store-popup__list
 	&__list {
 		display: grid;
 		column-gap: toRem(14);
+		max-width: toRem(900);
+		row-gap: toRem(20);
 		@media (min-width:em(680.98)){
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(4, 1fr);
 		}
 		@media (max-width: em(680.98)){
-			grid-template-columns: 1fr;			  
-			row-gap: toRem(80);
+			grid-template-columns: repeat(3, 1fr);			  
+			// row-gap: toRem(80);
+		}
+		@media (max-width:$mobileSmall){
+			 row-gap: toRem(10);
+			 grid-template-columns: repeat(2, 1fr); 
 		}
 	}
 	// .store-popup__item
@@ -115,11 +129,25 @@ body::after {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@include adaptiveValue("row-gap", 48, 20);
+		// @include adaptiveValue("row-gap", 48, 20);
+		@media (min-width:$mobileSmall){
+					row-gap: toRem(20);
+					  
+				}
+				@media (max-width:$mobileSmall){
+					  row-gap: toRem(10);
+				}
 	}
 	// .store-popup__img
 	&__img {
 		flex: 1;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+		img {
+			max-width: 100%;
+			width: 70%;
+		}
 	}
 	// .store-popup__link
 	&__link {
@@ -130,10 +158,14 @@ body::after {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@media (max-width:$mobileSmall){
+			 height: toRem(40); 
+		}
 	}
 	// .store-popup__bg
 	&__bg {
 		position: absolute;
+		z-index: -1;
 		img {
 			height: auto;
 		}
