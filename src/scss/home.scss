@@ -2406,3 +2406,106 @@
       text-transform: uppercase;
 		}
 }
+
+
+//================================
+   // ====== RULS PAGE ----------------------------------------
+//================================
+.ruls {
+  margin-bottom: toRem(50);
+  @media (min-width:$mobile){
+    padding-top: toRem(120);
+  }
+  @media (max-width:$mobile){
+     padding-top: toRem(70); 
+  }
+  // .ruls__container
+  &__container {
+  }
+	// .ruls__body
+	&__body {
+    max-width: toRem(1000);
+    margin: 0 auto;
+	}
+  // .ruls__head
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: toRem(10);
+    margin-bottom: toRem(30);
+    @media (min-width:em(1440.98)){
+      margin-top: toRem(50);
+    }
+  }
+  // .ruls__title
+  &__title {
+    @include adaptiveValue("font-size", 34, 24,0,1440,480);
+    font-weight: 800;
+  }
+  // .ruls__sub-title
+  &__sub-title {
+    font-weight: 600;
+    @include adaptiveValue("font-size", 24, 18,0,1440,480);
+  }
+  // .ruls__list
+  &__list {
+    font-size: toRem(18);
+    line-height: 1.35;
+    font-weight: 400;
+    .txt-under {
+      text-decoration: underline;
+    }
+    @media (min-width:$mobileSmall){
+      margin-left: toRem(20);
+    }
+    @media (max-width:$mobileSmall){
+       margin-left: toRem(10); 
+    }
+    a {
+      font-weight: 500;
+      color: $green-62;
+      text-decoration: underline;
+      transition: opacity .3s;
+      @media (any-hover: hover){
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  // .ruls__item
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: toRem(30);
+    }
+  }
+  // .ruls__title
+  &__title {
+    margin-bottom: toRem(15);
+  }
+  // .ruls__txt
+  &__txt {
+  }
+  // .ruls__sub-list
+  &__sub-list {
+  }
+  // .ruls__sub-item
+  &__sub-item {
+    &:not(:last-child) {
+      margin-bottom: toRem(15);
+    }
+  }
+	// .ruls_sub-sub-item
+	&_sub-sub-item {
+	}
+	// .ruls__sub-sub-list
+	&__sub-sub-list {
+    margin-left: toRem(15);
+	}
+}
+.txt-bold {
+  font-weight: 600;
+  font-size: toRem(20);
+}
