@@ -2384,10 +2384,24 @@ body {
   font-size: 1.125rem;
   line-height: 1.35;
   font-weight: 400;
+  list-style-type: none;
+  counter-reset: item;
 }
 
 .ruls__list .txt-under {
   text-decoration: underline;
+}
+
+.ruls__list .ruls__item {
+  position: relative;
+}
+
+.ruls__list .ruls__item:before {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  left: -1.25rem;
+  top: 1px;
 }
 
 .ruls__list a {
@@ -2402,7 +2416,7 @@ body {
   margin-bottom: 1.875rem;
 }
 
-.ruls__title {
+.ruls__title-item {
   margin-bottom: 0.9375rem;
 }
 

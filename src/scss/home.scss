@@ -2457,6 +2457,18 @@
     .txt-under {
       text-decoration: underline;
     }
+    list-style-type: none;
+    	counter-reset: item;
+    	.ruls__item {
+    		position: relative;
+    		&:before {
+    			counter-increment: item;
+    			content: counter(item);
+    			position: absolute;
+    			left: toRem(-20);
+    			top: 1px;
+    		}
+    	}
     @media (min-width:$mobileSmall){
       margin-left: toRem(20);
     }
@@ -2481,8 +2493,8 @@
       margin-bottom: toRem(30);
     }
   }
-  // .ruls__title
-  &__title {
+  // .ruls__title-item
+  &__title-item {
     margin-bottom: toRem(15);
   }
   // .ruls__txt
