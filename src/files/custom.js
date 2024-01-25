@@ -23,7 +23,7 @@ $(document).ready(function(){
 		}else if(selected_answer == 'value-e'){
 			result_5++;
 		}
-		if($el.parents('.test-page__block').hasClass('test-page__block_10')){
+		if($el.parents('.test-page__block').hasClass('test-page__block_05')){
 			for(var i=5;i>=2;i--){
 				if(result_1 >= i){
 					$('.result-test__main').addClass('result-test__main_01');
