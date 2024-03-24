@@ -290,6 +290,19 @@
 			@@include('html/_footer.htm',{})
 		</div>
 		@@include('html/_popup-buy.htm',{})
+
+		<div class="popup-done" style="opacity: 0;">
+			<div class="popup-done__wrapper">
+				<div class="popup-done__content">
+					<button type="button" class="popup-done__close" aria-label="кнопка закриття попапа">
+						<span></span>
+					</button>
+					<p class="popup-done__text title-sec">
+						Конкурс завершено!
+					</p>
+				</div>
+			</div>
+		</div>
 		@@include('html/_js.htm',{})
 	</body>
 </html>
